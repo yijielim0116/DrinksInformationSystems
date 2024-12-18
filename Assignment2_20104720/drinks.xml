@@ -1,0 +1,20 @@
+<object-stream>
+  <org.example.assignment2demo.ADT.LinkedList>
+    <head>
+      <next>
+        <contents class="org.example.assignment2demo.Drinks">
+          <drinkName>Volka</drinkName>
+          <countryofOrigin>Malaysia</countryofOrigin>
+          <description>apple with volka</description>
+          <imageURL>haha</imageURL>
+        </contents>
+      </next>
+      <contents class="org.example.assignment2demo.Drinks">
+        <drinkName>Volka</drinkName>
+        <countryofOrigin>Malaysia23</countryofOrigin>
+        <description>apple with volka</description>
+        <imageURL>haha</imageURL>
+      </contents>
+    </head>
+  </org.example.assignment2demo.ADT.LinkedList>
+</object-stream>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #5F9EA0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment2demo.RecipesController">
+   <children>
+      <Label layoutX="381.0" layoutY="24.0" prefHeight="27.0" prefWidth="122.0" text="RECIPES">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="100.0" prefHeight="19.0" prefWidth="138.0" text="Recipes Name:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RecipeNameField" layoutX="159.0" layoutY="96.0" promptText="Recipes Name" style="-fx-background-color: White;" />
+      <Label layoutX="28.0" layoutY="149.0" prefHeight="26.0" prefWidth="122.0" text="Description: ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RecipeDescriptionField" layoutX="159.0" layoutY="149.0" promptText="Description" style="-fx-background-color: White;" />
+      <Label layoutX="28.0" layoutY="208.0" prefHeight="19.0" prefWidth="89.0" text="Ingredients: ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RecipeIngredientsField" layoutX="159.0" layoutY="205.0" promptText="Ingredients" style="-fx-background-color: White;" />
+      <Label layoutX="28.0" layoutY="266.0" prefHeight="18.0" prefWidth="72.0" text="Quantities:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="RecipeQuantitiesField" layoutX="159.0" layoutY="262.0" promptText="Quantities" style="-fx-background-color: White;" />
+      <ListView fx:id="recipesListView" layoutX="340.0" layoutY="96.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="431.0" style="-fx-background-color: White;" />
+      <Label layoutX="340.0" layoutY="74.0" prefHeight="27.0" prefWidth="122.0" text="ALL RECIPES:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="310.0" mnemonicParsing="false" onAction="#addRecipe" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: Grey;" text="Add" />
+      <Button id="ResetButton" layoutX="178.0" layoutY="310.0" mnemonicParsing="false" onAction="#saveREC" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: Grey;" text="Save" />
+      <Button id="AddIngredientsButton" layoutX="28.0" layoutY="350.0" mnemonicParsing="false" onAction="#deleteRecipe" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: Grey;" text="Delete" />
+      <Button id="ResetButton" layoutX="178.0" layoutY="350.0" mnemonicParsing="false" onAction="#resetRecipes" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: Grey;" text="Reset" />
+      <Button layoutX="28.0" layoutY="390.0" mnemonicParsing="false" onAction="#updateRecipes" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: Grey;" text="Update" />
+      <Button id="ResetButton" layoutX="178.0" layoutY="390.0" mnemonicParsing="false" onAction="#loadREC" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: Grey;" text="Load" />
+      <Button layoutX="211.0" layoutY="452.0" mnemonicParsing="false" onAction="#searchRecipesByName" text="Search By Name" />
+      <Button layoutX="339.0" layoutY="452.0" mnemonicParsing="false" onAction="#searchRecipesByDescription" text="Search By Description" />
+      <Button layoutX="635.0" layoutY="452.0" mnemonicParsing="false" onAction="#searchRecipesByIngredients" text="Search By Ingredients" />
+      <Button layoutX="490.0" layoutY="452.0" mnemonicParsing="false" onAction="#searchRecipesByQuantity" text="Search By Quantities" />
+      <Label layoutX="30.0" layoutY="451.0" prefHeight="27.0" prefWidth="145.0" text="SEARCHED RESULTS:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="searchRecipesListView" layoutX="30.0" layoutY="478.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="741.0" />
+      <Button layoutX="529.0" layoutY="70.0" mnemonicParsing="false" onAction="#sortRecipesByName" text="Sorted By Name" />
+      <Button layoutX="642.0" layoutY="70.0" mnemonicParsing="false" onAction="#sortRecipesByQuantity" text="Sorted By Quantities" />
+      <Button layoutX="621.0" layoutY="631.0" mnemonicParsing="false" onAction="#searchRecipesByNameUsingHashTable" prefHeight="26.0" prefWidth="145.0" text="Search Name By Hash" />
+   </children>
+</AnchorPane>

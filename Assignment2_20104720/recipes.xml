@@ -1,0 +1,28 @@
+<object-stream>
+  <org.example.assignment2demo.ADT.LinkedList>
+    <head>
+      <next>
+        <next>
+          <contents class="org.example.assignment2demo.Recipes">
+            <recipeName>Bloody Marry</recipeName>
+            <recipeDescription>a</recipeDescription>
+            <recipeIngredients>a</recipeIngredients>
+            <recipeQuantity>10</recipeQuantity>
+          </contents>
+        </next>
+        <contents class="org.example.assignment2demo.Recipes">
+          <recipeName>Aloody Marry</recipeName>
+          <recipeDescription>a</recipeDescription>
+          <recipeIngredients>a</recipeIngredients>
+          <recipeQuantity>10</recipeQuantity>
+        </contents>
+      </next>
+      <contents class="org.example.assignment2demo.Recipes">
+        <recipeName>Vloody Marry</recipeName>
+        <recipeDescription>a</recipeDescription>
+        <recipeIngredients>a</recipeIngredients>
+        <recipeQuantity>10</recipeQuantity>
+      </contents>
+    </head>
+  </org.example.assignment2demo.ADT.LinkedList>
+</object-stream>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment2demo.Mainpage">
+   <children>
+      <TabPane prefHeight="700.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="DrinksTabID" style="-fx-background-color: Yellow;" text="Drinks">
+                <fx:include source="drinks.fxml" />
+            </Tab>
+            <Tab fx:id="IngredientsTabID" style="-fx-background-color: Green;" text="Ingredients">
+                <fx:include source="ingredients.fxml" /> </Tab>
+            <Tab fx:id="RecipesTabID" style="-fx-background-color: Orange;" text="Recipes">
+                <fx:include source="recipes.fxml" /></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

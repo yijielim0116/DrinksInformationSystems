@@ -1,0 +1,25 @@
+<object-stream>
+  <org.example.assignment2demo.ADT.LinkedList>
+    <head>
+      <next>
+        <next>
+          <contents class="org.example.assignment2demo.Ingredients">
+            <ingname>Volka</ingname>
+            <ingdecription>volka</ingdecription>
+            <ABV>12.0</ABV>
+          </contents>
+        </next>
+        <contents class="org.example.assignment2demo.Ingredients">
+          <ingname>Juice</ingname>
+          <ingdecription>apple</ingdecription>
+          <ABV>20.0</ABV>
+        </contents>
+      </next>
+      <contents class="org.example.assignment2demo.Ingredients">
+        <ingname>Juice</ingname>
+        <ingdecription>apple</ingdecription>
+        <ABV>50.0</ABV>
+      </contents>
+    </head>
+  </org.example.assignment2demo.ADT.LinkedList>
+</object-stream>
